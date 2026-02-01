@@ -1,0 +1,279 @@
+/* ==========index===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* NAVBAR */
+.navbar {
+    border-bottom: 1px solid #eee;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.logo {
+    width: 130px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    color: #555;
+}
+
+.nav-links li:hover {
+    color: #387ed1;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero img {
+    width: 850px;
+    max-width: 100%;
+}
+
+.hero h1 {
+    font-size: 44px;
+    margin-top: 40px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+    margin: 15px 0;
+}
+
+.hero button {
+    background: #387ed1;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* TRUST */
+.trust {
+    display: flex;
+    gap: 60px;
+    padding: 80px 0;
+}
+
+.trust h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.trust h3 {
+    margin-top: 22px;
+}
+
+.trust p {
+    color: #666;
+    margin-top: 6px;
+    line-height: 1.6;
+}
+
+.trust-right img {
+    width: 420px;
+}
+
+.trust-icon {
+    position: relative;
+    gap: 40px;
+    display: flex;
+    margin-right: 25px;
+}
+
+
+
+/* MEDIA */
+.media {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.media img {
+    max-width: 100%;
+    opacity: 0.6;
+}
+
+/* PRICING */
+/* common container */
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* pricing section */
+.pricing {
+    padding: 100px 0;
+}
+
+.pricing-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LEFT SIDE */
+.pricing-left {
+    width: 45%;
+}
+
+.pricing-left h2 {
+    font-size: 32px;
+    font-weight: 500px;
+    margin-bottom: 15px;
+}
+
+.pricing-left p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.pricing-left a {
+    font-size: 16px;
+    color: #387ed1;
+    text-decoration: none;
+}
+
+.pricing-left a:hover {
+    text-decoration: underline;
+}
+
+
+/* RIGHT SIDE */
+.pricing-right {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: flex-start;
+}
+
+.price-box {
+    width: 30%;
+}
+
+.price-box h1 {
+    font-size: 48px;
+    color: #f5a623;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* SVG IMAGE */
+.price-box img {
+    width: 120px;
+    margin-bottom: 15px;
+}
+
+.price-box p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* EDUCATION */
+.education {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 0;
+}
+
+.education img {
+    width: 300px;
+}
+
+.education p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.cta p {
+    color: #666;
+    margin: 10px 0 20px;
+}
+
+.cta button {
+    background: #387ed1;
+    color: #fff;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* FOOTER */
+footer {
+    background: #fafafa;
+    padding: 60px 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+}
+
+footer p {
+    color: #666;
+    margin-top: 6px;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px) {
+
+    .trust,
+    .pricing,
+    .education {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pricing-right {
+        flex-direction: column;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:600px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
