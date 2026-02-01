@@ -208,12 +208,10 @@
 .benefits {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* Left | Right */
     align-items: center;
     gap: 60px;
 }
 
-/* Left section */
 .bene {
     text-align: center;
 }
@@ -230,7 +228,6 @@
     color: #494545;
 }
 
-/* Right section */
 .open {
     display: grid;
     grid-template-columns: 1fr;
