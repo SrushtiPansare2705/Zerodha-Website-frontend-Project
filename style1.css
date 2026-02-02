@@ -51,9 +51,9 @@
 }
 
 .hero h1 {
-    font-size: 36px;
+    font-size: 25px;
     font-weight: 600;
-    color: #1c1c1c;
+    color: #363535;
     margin-bottom: 12px;
 }
 
@@ -154,6 +154,13 @@
     background: white;
     padding: 25px;
     border: 1px solid #eee;
+    display: flex;
+    gap: 24px;
+}
+
+.card img {
+    border-style: none;
+    max-width: 100%;
 }
 
 .option-grid {
@@ -165,7 +172,7 @@
 }
 
 .primary {
-    padding: 12px;
+    padding: 15px;
     background: #387ed1;
     color: white;
     border: none;
@@ -181,6 +188,7 @@
 
 .ste li {
     gap: 20px;
+
 }
 
 .ste img {
