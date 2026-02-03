@@ -179,6 +179,10 @@
 }
 
 /* steps */
+.steps {
+    background-color: rgb(251, 248, 248);
+}
+
 .ste {
     display: grid;
     grid-template-columns: 1fr 1fr;
