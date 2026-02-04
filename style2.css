@@ -1,4 +1,4 @@
-/* ===== PRODUCTS ===== */
+/* About */
 
 /* ==========index===== */
 * {
@@ -41,39 +41,49 @@
     cursor: pointer;
 }
 
-/* s */
-.zerodha-products {
-    background: linear-gradient(135deg, #1a73e8, #4285f4);
-    color: #fff;
-    padding: 80px 40px;
-    border-radius: 16px;
-    text-align: center;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
-    margin: 60px auto;
+/* FOOTER */
+footer {
+    background: #fafafa;
+    padding: 60px 0;
 }
 
-.zerodha-products h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
 }
 
-.zerodha-products p {
-    font-size: 1.1rem;
-    margin-bottom: 30px;
+footer p {
+    color: #666;
+    margin-top: 6px;
 }
 
-.btn {
-    text-decoration: none;
-    background-color: #fff;
-    color: #1a73e8;
-    padding: 12px 25px;
-    border-radius: 50px;
-    font-weight: bold;
-    transition: all 0.3s ease;
+footer h4 {
+    margin-bottom: 10px;
 }
 
-.btn:hover {
-    background-color: #e0e0e0;
-    transform: translate(-3px);
+/* RESPONSIVE */
+@media(max-width:900px) {
+
+    .trust,
+    .pricing,
+    .education {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pricing-right {
+        flex-direction: column;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:600px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
 }
